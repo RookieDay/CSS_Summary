@@ -165,3 +165,134 @@ em {
 .hide {
     display: none;
 }
+
+
+/*site-nav part*/
+
+.site-nav {
+    height: 30px;
+    line-height: 30px;
+    background-color: #f1f1f1;
+}
+
+.site-nav-send,
+.site-nav-r .fore {
+    padding: 0 25px 0 10px;
+    position: relative;
+}
+
+.site-nav-send:hover {
+    background-color: #fff;
+}
+
+.site-nav-send i,
+.fore i {
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    font: 400 15px/15px consolas;
+    width: 15px;
+    height: 7px;
+    overflow: hidden;
+}
+
+.site-nav-send i s,
+.fore i s {
+    position: absolute;
+    top: -7px;
+}
+
+.site-nav-r ul li {
+    float: left;
+    padding: 0 10px;
+}
+
+.site-nav-r .line {
+    width: 1px;
+    height: 12px;
+    background-color: #dddddd;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.site-nav-r .jd_tel {
+    padding-left: 25px;
+}
+
+.jd_tel span {
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    width: 15px;
+    height: 20px;
+    background: url(../images/tel.png) no-repeat;
+}
+
+
+/*topbanner part*/
+
+.topbanner {
+    height: 80px;
+    background-color: #ff031a;
+}
+
+.tp {
+    position: relative;
+}
+
+.close-ban {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 19px;
+    height: 19px;
+    background: url(../images/close-ban.png) no-repeat;
+}
+
+.close-ban:hover {
+    background-position: bottom;
+}
+
+
+/*search part*/
+
+.search-logo {
+    width: 362px;
+    height: 100px;
+    float: left;
+}
+
+.logo-a {
+    display: block;
+    width: 270px;
+    height: 60px;
+    background: url(../images/logo.png) no-repeat;
+    margin-top: 20px;
+    text-indent: -99999em;
+}
+
+.search-input {
+    width: 538px;
+    height: 61px;
+    float: left;
+    background-color: blue;
+}
+
+.search-car {
+    width: 139px;
+    height: 34px;
+    float: right;
+    border: 1px solid #dfdfdf;
+    margin: 25px 65px 0 0;
+}
+
+.search-more {
+    width: 500px;
+    height: 28px;
+    line-height: 28px;
+    float: left;
+}
+
+.search-more a {
+    margin-right: 8px;
+}
