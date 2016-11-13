@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>20Clearfix原理实战</title>
+	<style>
+
+		* { padding: 0; margin: 0; }
+		.header, .aside, .main, .footer {
+			/*border: 1px solid red;*/
+			border: 1px solid yellow;   /*bd+  + tab*/
+			background-color: silver;
+			margin-bottom: 10px;
+			height: 200px;
+		}
+
+		.aside {
+			height: 300px;
+			float: left;
+			width: 200px;
+		}
+
+		.main {
+			float: left;
+			/*margin-left: 202px;*/
+			width: 980px;
+		}
+
+		.clearfix {
+			display: table; /*  触发bfc，div具有的包裹性*/
+		}
+
+		.clearfix:before, .clearfix:after {
+			content: "";
+			display: block;
+			clear: both;
+			height: 0;
+			visibility: hidden;
+		}
+
+		.clearfix {
+			_zoom: 1; 
+		}
+
+
+	/*淘宝的clearfix代码： start*/
+	.d12b-wrapper	{
+		position:relative;z-index:1;
+		width:1190px;
+		margin:0 auto;
+		*zoom:1
+	}
+	.d12b-wrapper:after,.d12b-wrapper:before {
+		content:"";display:table;
+	}
+	.d12b-wrapper:after{height:0;line-height:0;visibility:hidden;clear:both;}
+	/*淘宝的clearfix代码： end*/
+
+	</style>
+
+</head>
+<body>
+	<div class="header">
+		header
+	</div>
+
+	<div class="wrap clearfix">
+		<div class="aside">
+			aside
+		</div>
+		
+		<div class="main">
+			main
+		</div>
+	</div>
+
+	<div class="footer">
+		footer
+	</div>
+</body>
+</html>

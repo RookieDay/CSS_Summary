@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>16全浮动版心不居中的两列网站布局.html</title>
+	<style>
+		* { padding: 0; margin: 0; }
+
+		.header, .wrap, .footer, .nav, .main {
+			background-color: silver;
+			border: 1px solid teal;
+			/*width: 1190px;
+			margin: 0 auto 10px auto;*/
+			margin-bottom: 10px;
+
+		}
+		.header, .footer {
+			height: 100px;
+		}
+
+		.nav, .main {
+			height: 300px;
+		}
+
+		.nav {
+			width: 200px;
+			float: left;
+		}
+		.main {
+			width: 986px;   /*  1190-202-2*/
+			float: left ;
+			margin-left: 202;
+			
+		}
+
+		.footer {
+			/*清除浮动，就是让当前元素左右两边都不存在浮动元素的时候才把元素放到标准流汇中显示。*/
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		header
+	</div>
+
+		<div class="nav">
+			nav
+		</div>
+		
+		<div class="main">
+			main
+		</div>
+
+	<div class="footer">
+		
+		footer
+	</div>
+</body>
+</html>

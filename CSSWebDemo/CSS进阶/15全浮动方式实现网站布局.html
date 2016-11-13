@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>15全浮动方式实现网站布局</title>
+	<style>
+		* { padding: 0; margin: 0; }
+
+		.header, .wrap, .footer, .nav, .main {
+			background-color: silver;
+			border: 1px solid teal;
+			width: 1190px;
+			margin: 0 auto 10px auto;
+
+		}
+		.header, .footer {
+			height: 100px;
+		}
+
+		.wrap {
+			overflow: hidden;
+		}
+		.nav, .main {
+			height: 300px;
+			float: left;
+		}
+
+		.nav {
+			width: 200px;
+		}
+		.main {
+			width: 986px;/*  1190-202-2*/
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		header
+	</div>
+
+	<div class="wrap">
+		<div class="nav">
+			nav
+		</div>
+		
+		<div class="main">
+			main
+		</div>
+	</div>
+	<div class="footer">
+		
+		footer
+	</div>
+</body>
+</html>

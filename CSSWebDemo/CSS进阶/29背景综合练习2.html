@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>29背景综合练习2</title>
+	<style>
+		* { padding: 0; margin: 0; }
+		ul { list-style: none; }
+
+		.nav a, .nav a:visited {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		.nav {
+			/*letter-spacing: -3px;*/
+			word-spacing: -4px;
+		}
+
+		/*使用inline-block的方式实现菜单导航*/
+		.nav-item {
+			display: inline-block;  /* ie6 \7 都不支持 inline-block*/
+			*display: inline; /* 只有ie6和7 能识别的css设置*/
+			zoom: 1;
+		
+		}
+
+		.nav-link {
+			display: inline-block;
+			width: 120px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			background: url(img/bg.png) no-repeat;
+		}
+
+		.nav-link:hover {
+			background: url(img/bgc.png) no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<ul class="nav">
+		<li class="nav-item"><a href="#" class="nav-link">传智播客</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">传智播客</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">传智播客</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">传智播客</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">传智播客</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">传智播客</a></li>
+	</ul>
+</body>
+</html>

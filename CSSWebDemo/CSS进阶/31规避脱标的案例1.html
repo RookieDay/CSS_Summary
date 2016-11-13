@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>31规避脱标的案例1</title>
+	<style>
+		* { padding: 0; margin: 0; }
+		.parent {
+			height: 100px;
+			width: 300px;
+			border: 1px solid teal;
+			background-color: yellowgreen;
+		}
+
+		.child {
+			background-color: red;
+			height: 30px;
+			width: 30px;
+			margin-left: auto;
+			margin-right: 0;
+			margin-top: 35px;
+		}
+
+		
+		.icon {
+			display: inline-block;
+			vertical-align: middle;
+			margin-top: -8px;
+
+			width: 27px;
+			height: 24px;
+			background: url(img/product.png) no-repeat;	
+		}	
+		span {
+			line-height: 24px;
+			font-size: 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="child"></div>
+	</div>
+
+	<hr>
+	<div class="wrap">
+		<i class="icon"></i><span>传智播客</span>
+	</div>
+</body>
+</html>

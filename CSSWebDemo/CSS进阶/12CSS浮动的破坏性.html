@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>12CSS浮动的破坏性</title>
+	<style>
+		* { padding: 0; margin: 0; }
+		.child {
+			width: 200px;
+			height: 200px;
+			background-color: teal;
+			border: 1px solid black;
+
+			float: left;
+		}
+
+		.parent {
+			border: 1px solid red;
+			overflow: hidden;  /*超出的部分进行隐藏*/
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="child">
+			child
+		</div>
+	</div>
+</body>
+</html>

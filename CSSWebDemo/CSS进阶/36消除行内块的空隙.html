@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>消除行内块的空隙</title>
+	<style>
+		* { margin: 0; padding: 0; }
+		div span {
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			background-color: #ccc;
+			border: 1px solid #000;
+			font-size: 14px;
+		}
+
+		/*消除inline块之间的空隙*/
+		/*第一种方法： font-size=0方法*/
+		/*div {
+			font-size: 0;
+		}*/
+
+		/*第二种方法： 使用html注释消除空格方法 或者将行内块元素放到一行显示*/
+
+		/*第三种办法：可以使用float*/
+
+		/*第四种方法： 可以使用letter-space 和 word-space调整*/
+		div {
+			letter-spacing: -2px;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<span>1</span>
+		<span>2</span><!--
+		--><span>3</span>
+		<span>4</span>
+	</div>
+</body>
+</html>

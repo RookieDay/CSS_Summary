@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>23绝对定位居中显示的demo.html</title>
+	<style>
+		* { padding: 0; margin: 0; }
+		.banner {
+			width: 400px;
+			margin: 0 auto;
+			background-color: teal;
+			height: 400px;
+			position: relative;
+			
+		}
+		.slide-r {
+			right: 0;
+		}
+		.slide-l, .slide-r {
+			height: 30px;
+			width: 20px;
+			background-color: #ccc;
+			border: 1px solid #000;
+			color: #fff;
+			position: absolute;
+			top: 50%;
+			margin-top: -15px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="banner">
+		<div class="slide-l">&lt;</div>
+		<div class="slide-r">&gt;</div>
+	</div>
+</body>
+</html>

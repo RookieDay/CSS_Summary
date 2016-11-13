@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>22CSS绝对定位的案例</title>
+	<style>
+		* { padding: 0; margin: 0; }
+		.header, .wrap, .close {
+			background-color: teal;
+			border: 1px solid #000;
+		}
+		.header	{
+			height: 200px;
+		}
+		.wrap	{
+			background-color: #09C;
+			width: 400px;
+			position: relative;
+			
+		}
+
+		.close {
+			height: 20px;
+			width: 20px;
+			/*float: right;*/   /*可以实现，但是影响文字排版*/
+
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="header">
+		afsdfa,.malflsadjfs
+	</div>
+
+	<div class="wrap">
+
+		<div class="txt">
+			sdfsdfsdfsdfs
+		</div>
+		<div class="main">
+			sdfadkhfalkhjfkasdfhjk 
+		</div>
+
+		<div class="close">
+				X
+		</div>
+		
+	</div>
+</body>
+</html>

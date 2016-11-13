@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>17CSS实现布局的案例</title>
+	<style>
+		* { padding: 0; margin: 0; }
+		.header, .aside, .main, .footer {
+			background-color: teal;
+			border: 1px solid yellowgreen;
+			margin-bottom: 10px;
+		}
+
+		.aside, .main {
+			height: 200px;
+		}
+		.aside {
+			width: 200px;
+			float: left;
+		}
+		.main {
+			/*margin-left: 202px;*/
+			float: left;
+			width: 980px;
+		}
+
+		.header {
+			height: 100px;
+		}
+
+		.footer {
+			height: 50px;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">header</div>
+	<div class="aside">aside</div>
+	<div class="main">main</div>
+	<div class="footer"> footer </div>
+</body>
+</html>

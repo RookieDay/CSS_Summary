@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML5 滑动门实现案例</title>
+		<style>
+			* { margin: 0; padding: 0; }
+			ul { list-style: none; }
+			a, a:visited {
+				color: #ccc;
+				text-decoration: none;
+			}
+			.nav-item, .nav-link {
+				float: left;
+			}
+			.nav-link {
+				height: 35px;
+				/*margin-right: 10px;*/
+				background: url(img/bg_r1_c3.png) repeat-x;
+				line-height: 35px;
+			}
+			.border-l {
+				background: url(img/bg_r1_c1.png) no-repeat;
+				float: left;
+				height: 35px;
+				width: 7px;
+			}
+			.border-r {
+				float: left;
+				height: 35px;
+				width: 29px;
+				background: url(img/bg_r1_c5.png) no-repeat;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="nav">
+			<li class="nav-item">
+				<i class="border-l"></i>
+				<a class="nav-link">首页</a>
+				<i class="border-r"></i>
+			</li>
+			<li class="nav-item"><i class="border-l"></i><a href="#" class="nav-link">传智播客</a><i class="border-r"></i></li>
+			<li class="nav-item"><i class="border-l"></i><a href="#" class="nav-link">前端与移动开发学院</a><i class="border-r"></i></li>
+			<li class="nav-item"><i class="border-l"></i><a href="#" class="nav-link">非常牛</a><i class="border-r"></i></li>
+		</ul>
+		
+	</body>
+</html>

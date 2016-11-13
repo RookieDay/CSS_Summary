@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS进阶/35滑动门广实现2</title>
+	<style>
+		* { padding: 0; margin: 0; }
+		ul { list-style: none; }
+		a, a:visited {
+			color: #09c;
+			text-decoration: none;
+		}
+
+		.nav-link, .nav-item {
+			float: left;
+			height: 35px;
+			line-height: 35px;
+		}
+		.nav-item i {
+			float: left;
+			height: 35px;
+			width: 6px;
+			background: url(img/l.png) no-repeat;
+		}
+		.nav-link {
+			background: url(img/r.png) no-repeat right;
+			padding-right: 30px;
+		}
+	</style>
+</head>
+<body>
+	<ul class="nav">
+		<li class="nav-item"><i></i><a href="#" class="nav-link">传智</a></li>
+		<li class="nav-item"><i></i><a href="#" class="nav-link">传智播客</a></li>
+		<li class="nav-item"><i></i><a href="#" class="nav-link">传智播客前端学院</a></li>
+		<li class="nav-item"><i></i><a href="#" class="nav-link">传智播客</a></li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.wrap {
+			background-color: silver;
+			height: 400px;
+			width: 400px;
+			position: relative;
+			border: 1px solid #000;
+		}
+		.box1, .box2, .box3 {
+			border: 1px solid teal;
+			height: 100px;
+			width: 100px;
+			background-color: yellowgreen;
+			position: absolute;
+		}
+	
+		.box1 {
+			top: 0;
+			left: 0;
+			z-index: 400;
+		}
+		.box2 {
+			background-color: yellow;
+			
+			top: 30px;
+			left: 30px;
+			z-index: 200;
+		}
+		.box3 {
+			background-color: red;
+			top: 60px;
+			left: 50px;
+			z-index: 300;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="box1">
+			1
+		</div>
+
+		<div class="box2">
+			2
+		</div>
+
+		<div class="box3">
+			3
+		</div>
+	</div>
+</body>
+</html>

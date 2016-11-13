@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>02CSS设置盒子边框</title>
+	<style>
+		.box {
+			height: 200px;
+			width: 200px;
+			background-color: green;
+
+			/*设置上边框的宽度*/
+			border-top-width: 20px;
+
+			/*设置上边框的颜色*/
+			border-top-color: red;
+
+			/*设置上边框的样式： 虚线、实线、点线..*/
+			border-top-style: double;
+
+
+			border-bottom-color: yellowgreen;
+			border-bottom-width: 5px;
+			border-bottom-style: solid;
+
+			/*边框的样式设置也可以进行合写*/
+			/*border-top: 宽度 样式 颜色;*/
+			border-left: 5px solid blue;
+
+			/*可以用一行css设置上下左右所有的边框的样式*/
+			border: 10px dashed blue;
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		
+	</div>
+
+</body>
+</html>

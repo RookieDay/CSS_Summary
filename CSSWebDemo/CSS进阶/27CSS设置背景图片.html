@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>27CSS设置背景图片.html</title>
+	<style>
+		#header {
+			background-color: silver;
+			background-image: url(img/a.png);
+			background-repeat: no-repeat;
+			height: 900px;
+			width: 900px;
+			border: 1px solid #000;
+		}
+		.wrap {
+			height: 300px;
+			width: 300px;
+			background-color: yellowgreen;
+			background-image: url(img/b.png);
+			/*background-position: 50px 20px;*/
+			background-position: -10px -20px;
+			/*background-position: right center;*/
+			/*background-position: right top;*/
+			background-repeat: no-repeat;
+			/*background-repeat: repeat-x;*/
+			/*background-repeat: repeat-y;*/
+			/*background-repeat: repeat;  /*平铺所有的 方向*/	
+
+			/*背景设置合写的样式，可以省略任何一项配置*/
+			background: yellowgreen url(img/b.png) no-repeat 20px 10px;
+			
+		}
+
+		body {
+			background-image: url(img/bg.jpg);
+			background-attachment: scroll;
+			/*background-attachment: fixed;*/
+		}
+	</style>
+
+</head>
+<body>
+	<div id="header">
+		
+	</div>
+	<div class="wrap">
+		
+	</div>
+</body>
+</html>
